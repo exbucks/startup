@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import { Actions, Scene, Router } from 'react-native-router-flux';
 import {
   AppRegistry,
   Dimensions,
@@ -10,6 +9,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { Actions, Scene, Router } from 'react-native-router-flux';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';

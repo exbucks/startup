@@ -1,12 +1,11 @@
-
 import React, { Component } from 'react';
-import { Actions, Scene, Router } from 'react-native-router-flux';
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
+import { Actions, Scene, Router } from 'react-native-router-flux';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -31,14 +30,14 @@ function mapDispatchToProps(dispatch) {
 class Init extends Component {
   componentDidMount() {
     setTimeout(() => {
-      Actions.login();
+      Actions.main();
     }, 500);
   }
 
   render() {
     return (
       <View style={styles.container}>
-        
+
       </View>
     );
   }

@@ -1,14 +1,13 @@
-
+import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import { Provider } from 'react-redux';
-import React, { Component } from 'react';
 
 import App from './src/index';
 import configureStore from './src/store/configure-store';
 
 const store = configureStore();
 
-class SuperMarket extends Component {
+export default class startup extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -18,4 +17,4 @@ class SuperMarket extends Component {
   }
 }
 
-AppRegistry.registerComponent('SuperMarket', () => SuperMarket);
+AppRegistry.registerComponent('startup', () => startup);

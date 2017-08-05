@@ -6,10 +6,11 @@ import { connect } from 'react-redux';
 
 import * as AuthAction from './actions/auth';
 
-import Init from './components/init';
-import Login from './components/login';
 import Main from './components/main';
-import Market from './components/market';
+import Sub from './components/sub';
+import Sub1 from './components/sub1';
+import Sub2 from './components/sub2';
+import Sub3 from './components/sub3';
 
 // map redux store to props
 function mapStateToProps(state) {
@@ -41,11 +42,12 @@ export default class popuppin extends Component {
   render() {
     return(
       <Router createReducer={reducerCreate}>
-        <Scene key="root" hideNavBar>
-          <Scene key="init" component={Init} title="Init" intial />
-          <Scene key="login" component={Login} title="Login" />
-          <Scene key="main" component={Main} title="Main" />
-          <Scene key="market" component={Market} title="Market" />
+        <Scene key="root">
+          <Scene key="main" component={Main} title="Main" intial />
+          <Scene key="sub" component={Sub} title="Annalisa Giangregorio" />
+          <Scene key="sub1" component={Sub1} title="Annalisa Giangregorio" />
+          <Scene key="sub2" component={Sub2} title="Telekinesis" />
+          <Scene key="sub3" component={Sub3} title="Fly Moon Royalty" />
         </Scene>
       </Router>
     );
