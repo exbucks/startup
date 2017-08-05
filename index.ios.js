@@ -8,13 +8,13 @@ import configureStore from './src/store/configure-store';
 const store = configureStore();
 
 export default class startup extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
-  }
+    render() {
+        return (
+            <Provider store={store}>
+                <App />
+            </Provider>
+        );
+    }
 }
 
 AppRegistry.registerComponent('startup', () => startup);
